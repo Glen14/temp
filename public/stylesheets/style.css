@@ -1,0 +1,94 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #f4f4f4; 
+  text-align: center;
+}
+
+/* Header styles */
+header {
+  background-color: #b8b8b8; 
+  color: rgb(7, 109, 146); 
+  text-align: center; 
+  padding: 20px; 
+}
+
+header h1 {
+  margin: 0; 
+  font-size: 2rem; 
+}
+
+header p {
+  margin-top: 5px; 
+  font-size: 1rem; 
+}
+
+
+.content {
+  flex: 1;
+  padding: 20px; 
+
+  margin: 20px auto; 
+  background-color: white; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 5px; 
+}
+
+/* Footer styles */
+footer {
+  background-color: #b8b8b8;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 15px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Additional styles for headings and paragraphs within content */
+h2 {
+  color: #3498db; 
+  border-bottom: 2px solid #3498db; 
+  padding-bottom: 10px; 
+}
+
+p {
+  color: rgb(7, 109, 146);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  .content {
+      padding: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+}
+
+/* Adjustments for Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:hover {
+  background-color: #f5f5f5;
+}

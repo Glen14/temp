@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+    head
+        title= title
+        link(rel='stylesheet', href='/styles/style.css')
+    body
+        h2 All Movies
+        table
+            thead
+                tr
+                    th Movie ID
+                    th Title
+                    th Year
+                    th Rated
+                    th Released
+                    th Runtime
+                    th Genre
+                    th Director
+                    th Writer
+                    th Actors
+                    th Plot
+                    th Language
+                    th Country
+                    th Awards
+                    th IMDb Rating
+                    th Metascore
+            tbody
+                each movie in movies
+                    tr(class=(movie.Metascore === "" || movie.Metascore === "N/A" ? 'highlighted' : ''))
+                        td= movie.Movie_ID
+                        td= movie.Title
+                        td= movie.Year
+                        td= movie.Rated
+                        td= movie.Released
+                        td= movie.Runtime
+                        td= movie.Genre
+                        td= movie.Director
+                        td= movie.Writer
+                        td= movie.Actors
+                        td= movie.Plot
+                        td= movie.Language
+                        td= movie.Country
+                        td= movie.Awards
+                        td= movie.imdbRating || 'N/A'
+                        td= movie.Metascore || 'N/A'
+
+        style.
+            .highlighted {
+                background-color: yellow; /* Highlight color */
+            }

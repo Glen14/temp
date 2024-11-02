@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+</head>
+<body>
+  <h1>{{title}}</h1>
+  <ul>
+    {{#each movies}}
+      <li>
+        <strong>{{Title}}</strong> ({{Year}})
+        <p>Rated: {{Rated}}</p>
+        <p>Runtime: {{Runtime}}</p>
+        <p>Genre: {{Genre}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</body>
+</html>
