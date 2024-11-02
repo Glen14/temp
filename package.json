@@ -1,13 +1,14 @@
 {
   "name": "assn2-glen",
   "version": "1.0.0",
+  "description": "Assignment 2 - Glen Correia",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Glen Correia",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^4.21.1",
     "express-handlebars": "^8.0.1",
